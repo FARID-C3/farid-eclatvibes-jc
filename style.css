@@ -92,18 +92,6 @@ body {
     color: #006494;
 }
 
-#menu {
-    display: none;
-}
-
-.menu-icono {
-    width: 25px;
-}
-
-.menu label {
-    cursor: pointer;
-    display: none;
-}
 
 .header-content {
     margin-top: 200px;
@@ -362,7 +350,12 @@ body {
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
+#productModal .product-category img {
+    max-width: 100%;  
+    height: auto;     
+    display: block;   
+    margin-bottom: 15px;  
+}
 .close {
     color: #aaa; 
     float: right; 
@@ -379,41 +372,32 @@ body {
 
 
 @media(max-width: 991px) {
-    .menu {
-        padding: 20px;
-        justify-content: space-between;
+    .menu-texto {
+        font-size: 16px; 
+        padding: 8px; 
+        justify-content: center;
+        height: 60px;
+        position: fixed;
+        }
 
-    }
+        .navbar {
+            height: 50px;
+        }
     .menu-2 {
         display: none;
     }
-    .logo-1 {
-        width: 100px;
-    }
 
-    .logo-2 {
-        width: 0;
-    }
-
-    .menu label {
-        display: initial;
-    }
 
     .menu .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: dimgrey;
-        display: none;
+        top: 70%;
+        left: 50%;
+        right: 212%;
+        display: inline-block;
+
     }
 
     .menu .navbar ul li {
-        width: 100%;
-    }
-
-    #menu:checked ~ .navbar {
-        display: initial;
+        width: 20%;
     }
 
     .header-content {
@@ -506,6 +490,22 @@ body {
 
     .horario-txt {
         flex-direction: column;
+    }
+    .Resen {
+        padding: 15px; 
+    }
+
+    #resenText {
+        padding: 10px; 
+    }
+
+    #resenList p {
+        padding: 8px; 
+        font-size: 0.9rem; 
+    }
+    #productModal .product-category img {
+        width: 100%;  
+        margin-bottom: 10px;  
     }
 
 }
