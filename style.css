@@ -493,6 +493,7 @@ body {
     }
     .Resen {
         padding: 15px; 
+        width: 400px;
     }
 
     #resenText {
