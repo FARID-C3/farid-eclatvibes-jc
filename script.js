@@ -54,15 +54,3 @@ window.onclick = (event) => {
 document.getElementById("viewProducts")?.addEventListener("click", () => {
     showProductModal();
 });
-
-document.getElementById("reviewForm").addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    const reviewText = document.getElementById("reviewText").value;
-    const rating = document.getElementById("rating").value;
-    const gender = document.getElementById("reviewGender").value;
-
-    if (reviewText) {
-        const reviewList = document.getElementById("reviewList");
-
-        }})
